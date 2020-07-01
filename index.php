@@ -40,11 +40,11 @@
         </div>
         <div class="forms">
             <h2>Para hacer de este día algo hermoso por favor déjanos algunos datos para hacerte un regalo.</h2>
-            <form method="POST">
+            <form action="felicitaciones.php" method="POST">
                 <input type="text" name="name" placeholder="Nombre" required/>
                 <input type="text" name="last_name" placeholder="Apellido" required/>
-                <input type="text" name="major" placeholder="Carrera" required/>
-                <button type="submit">Enviar</button>
+                <input type="text" name="career" placeholder="Carrera" required/>
+                <button type="submit" name="submit">Enviar</button>
             </form>
         </div>
     </main>
