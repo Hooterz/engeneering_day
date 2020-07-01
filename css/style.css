@@ -71,6 +71,7 @@ main {
   padding: 2rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .orange_bg .content img {
   width: 50vw;
@@ -191,6 +192,7 @@ footer div a:hover {
     font-size: 3vh;
   }
 }
+/* mobile */
 @media only screen and (max-width: 850px) {
   nav h2 {
     font-size: 1.3rem;
@@ -234,34 +236,6 @@ footer div a:hover {
   .forms h2 {
     font-size: 3rem;
     text-align: center;
-  }
-  .forms form {
-    padding-top: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .forms form input {
-    display: block;
-    background-color: white;
-    border: none;
-    border-bottom: 0.3rem solid #ff590c;
-    margin-bottom: 3rem;
-    width: 60vw;
-    height: 5rem;
-  }
-  .forms form button {
-    background-color: white;
-    border: 0.3rem solid #ff590c;
-    border-radius: 2rem;
-    width: 10rem;
-    height: 5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  .forms form button:hover {
-    background-color: #ff590c;
-    color: white;
   }
 
   .congrats h2 {
