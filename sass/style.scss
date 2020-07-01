@@ -83,6 +83,7 @@ main {
         justify-content: center;
 
         img{
+            display: block;
             width: 50vw;
             border: .1rem solid white;
             border-radius: 1rem;
@@ -200,8 +201,6 @@ footer{
     }
 
     .orange_bg{
-
-        height: 100vh;
 
         .content{
             display: flex;
