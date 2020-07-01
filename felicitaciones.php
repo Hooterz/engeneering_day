@@ -20,9 +20,9 @@
         <div class="congrats">
             <?php
                echo 
-               '<h2>Felicitaciones en este Día del Ingeniero a '.$_POST['name'].' '.$_POST['last_name'].'!!! 👷🏻‍♂️👷🏻‍♀️👨🏻‍💻👩🏻‍💻</h2>
-                <p>A pesar de haber estado pasando por momentos difíciles en estos últimos tiempos, te mereces un momento de alegría como este pero también quiero darte ánimos para que te sigas superando en cualquier lugar en el que ahorita te encuentres. Quiero que recuerdes siempre que tú, '.$_POST['name'].' '.$_POST['last_name'].' eres lo mejor de dos mundos, eres la unión de las ciencias y de la creatividad lo que te convierte en un soñador con el poder de materializar tu sueño. Te deseo muchos ánimos y no dejes que una pandemia te detenga de ser productivo.</p>
-                <p>Esperamos poder vernos futuro ingeniero en '.$_POST['career'].'</p>';
+               '<h2>Felicitaciones en este Día del Ingeniero a '.$_GET['name'].' '.$_GET['last_name'].'!!! 👷🏻‍♂️👷🏻‍♀️👨🏻‍💻👩🏻‍💻</h2>
+                <p>A pesar de haber estado pasando por momentos difíciles en estos últimos tiempos, te mereces un momento de alegría como este pero también quiero darte ánimos para que te sigas superando en cualquier lugar en el que ahorita te encuentres. Quiero que recuerdes siempre que tú, '.$_GET['name'].' '.$_GET['last_name'].' eres lo mejor de dos mundos, eres la unión de las ciencias y de la creatividad lo que te convierte en un soñador con el poder de materializar tu sueño. Te deseo muchos ánimos y no dejes que una pandemia te detenga de ser productivo.</p>
+                <p>Esperamos poder vernos futuro ingeniero en '.$_GET['career'].'</p>';
             ?>
         </div>
     </main>
