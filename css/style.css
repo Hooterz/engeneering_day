@@ -1,0 +1,210 @@
+/* Variables */
+/* index */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* Nav bar*/
+nav {
+  overflow: hidden;
+  background-color: #ff590c;
+  position: fixed;
+  width: 100vw;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.2rem solid #ff590c;
+}
+nav h2 {
+  margin: 0.5rem;
+  width: 60%;
+  font-weight: bolder;
+  color: white;
+  font-size: 5rem;
+  -webkit-text-stroke: 0.2px black;
+}
+
+/* Ending Nav bar*/
+main {
+  padding-top: 8rem;
+  font-family: "Lato", sans-serif;
+}
+
+.welcome {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8rem 4rem 8rem;
+}
+.welcome .image {
+  width: 200px;
+  height: 200px;
+  background-image: url("../src/anahuac logo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.welcome p {
+  font-size: 4rem;
+  margin: 0 8rem 0 8rem;
+  text-align: center;
+}
+
+.orange_bg {
+  width: 100vw;
+  background-color: #ff590c;
+  color: white;
+  padding-top: 1rem;
+}
+.orange_bg h2 {
+  text-align: center;
+  font-size: 4rem;
+}
+.orange_bg .content {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+.orange_bg .content img {
+  width: 50vw;
+  border: 0.1rem solid white;
+  border-radius: 1rem;
+}
+.orange_bg .content .text {
+  padding-right: 2rem;
+  font-size: 2rem;
+}
+
+.forms {
+  margin: 4rem 8rem 4rem 8rem;
+}
+.forms h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+.forms form {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.forms form input {
+  display: block;
+  background-color: white;
+  border: none;
+  border-bottom: 0.3rem solid #ff590c;
+  margin-bottom: 3rem;
+  width: 60vw;
+  height: 5rem;
+}
+.forms form button {
+  background-color: white;
+  border: 0.3rem solid #ff590c;
+  border-radius: 2rem;
+  width: 10rem;
+  height: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.forms form button:hover {
+  background-color: #ff590c;
+  color: white;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+footer div a {
+  display: block;
+  padding: 1rem;
+}
+footer div a img {
+  width: 5vw;
+  height: 5vh;
+}
+footer div a:hover {
+  border: 2px solid #ff590c;
+  border-radius: 2rem;
+}
+
+.congrats {
+  height: 75vh;
+  margin: 5rem;
+  padding: 1rem;
+  text-align: center;
+  border: 3px solid #ff590c;
+  border-radius: 4rem;
+}
+.congrats h2 {
+  color: #ff590c;
+  font-size: 5rem;
+}
+.congrats p {
+  font-size: 3.5vh;
+}
+
+/* tablets */
+@media only screen and (max-width: 1200px) {
+  nav h2 {
+    font-size: 3.5rem;
+    -webkit-text-stroke: 0.1px black;
+  }
+
+  .welcome p {
+    font-size: 4rem;
+    margin: 0 4rem 0 4rem;
+    text-align: center;
+  }
+
+  .orange_bg {
+    height: 100vh;
+  }
+  .orange_bg .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .orange_bg .content img {
+    width: 70vw;
+    border: 0.1rem solid white;
+    border-radius: 1rem;
+  }
+  .orange_bg .content .text {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .congrats h2 {
+    color: #ff590c;
+    font-size: 4rem;
+  }
+  .congrats p {
+    font-size: 3vh;
+  }
+}
+@media only screen and (max-width: 850px) {
+  nav h2 {
+    font-size: 2rem;
+    text-align: center;
+    -webkit-text-stroke: 0.1px white;
+  }
+
+  .congrats h2 {
+    color: #ff590c;
+    font-size: 3rem;
+  }
+  .congrats p {
+    font-size: 2.5vh;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
