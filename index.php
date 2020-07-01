@@ -1,3 +1,40 @@
+<?php
+
+$error = null;
+
+if(isset($_POST['submit']))
+{
+    $name = htmlspecialchars($_POST['name']);
+    $lastname = htmlspecialchars($_POST['last_name']);
+    $career = htmlspecialchars($_POST['career']);
+    $findme0 = 'Ingenieria';
+    $findme1 = 'Ingeniería';
+    $findme2 = 'ingenieria';
+    $findme3 = 'ingeniería';
+    $findme4 = 'Ing';
+    $findme5 = 'ing';
+    $findme6 = 'Ing.';
+    $findme7 = 'ing.';
+    $pos0 = strpos($career, $findme0);
+    $pos1 = strpos($career, $findme1);
+    $pos2 = strpos($career, $findme2);
+    $pos3 = strpos($career, $findme3);
+    $pos4 = strpos($career, $findme4);
+    $pos5 = strpos($career, $findme5);
+    $pos6 = strpos($career, $findme6);
+    $pos7 = strpos($career, $findme7);
+
+    if($pos0 === false && $pos1 === false && $pos2 === false && $pos3 === false && $pos4 === false && $pos5 === false && $pos6 === false && $pos7 === false) 
+    {
+        $error = '<div class="alert alert-danger" role="alert">Lo siento, esto es solo para ingenieros</div>';
+    }
+    else
+    {
+        header('Location: felicitaciones.php?name='.$name.'&last_name='.$lastname.'&career='.$career.'');
+    }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -38,9 +75,10 @@
                 <img src="./src/foto-ingenierias.jpg" alt="escuela ingeniería" />
             </div>
         </div>
+        <?php echo $error ?>
         <div class="forms">
             <h2>Para hacer de este día algo hermoso por favor déjanos algunos datos para hacerte un regalo.</h2>
-            <form action="felicitaciones.php" method="POST">
+            <form action="/index.php" method="POST">
                 <input type="text" name="name" placeholder="Nombre" required/>
                 <input type="text" name="last_name" placeholder="Apellido" required/>
                 <input type="text" name="career" placeholder="Carrera" required/>
